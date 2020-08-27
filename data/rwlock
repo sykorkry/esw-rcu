@@ -1,0 +1,120 @@
+THREADS: 1
+Size of one list element: 40
+Reads: 2319723     Writes: 930
+Reads: 2394286     Writes: 936
+Reads: 2273058     Writes: 930
+Reads: 2430570     Writes: 933
+Reads: 2300920     Writes: 929
+Reads: 2335034     Writes: 933
+Reads: 2418441     Writes: 935
+Reads: 2377750     Writes: 935
+Reads: 2286795     Writes: 929
+Reads: 2395856     Writes: 936
+THREADS: 2
+Size of one list element: 40
+Reads: 3614662     Writes: 935
+Reads: 3645432     Writes: 937
+Reads: 3767688     Writes: 931
+Reads: 3618407     Writes: 934
+Reads: 3736225     Writes: 938
+Reads: 3694479     Writes: 933
+Reads: 3794675     Writes: 933
+Reads: 3811879     Writes: 936
+Reads: 3945452     Writes: 938
+Reads: 3624205     Writes: 935
+THREADS: 3
+Size of one list element: 40
+Reads: 3989829     Writes: 916
+Reads: 3971500     Writes: 912
+Reads: 3986493     Writes: 917
+Reads: 3978685     Writes: 913
+Reads: 3994610     Writes: 912
+Reads: 3868373     Writes: 888
+Reads: 3970938     Writes: 914
+Reads: 3997723     Writes: 921
+Reads: 4003022     Writes: 925
+Reads: 3972507     Writes: 921
+THREADS: 4
+Size of one list element: 40
+Reads: 3913564     Writes: 930
+Reads: 3919266     Writes: 934
+Reads: 3893974     Writes: 931
+Reads: 3903363     Writes: 918
+Reads: 3899756     Writes: 915
+Reads: 3912505     Writes: 928
+Reads: 3904781     Writes: 934
+Reads: 3901309     Writes: 926
+Reads: 3914306     Writes: 930
+Reads: 3921235     Writes: 934
+THREADS: 5
+Size of one list element: 40
+Reads: 3905481     Writes: 929
+Reads: 3926823     Writes: 931
+Reads: 3922519     Writes: 931
+Reads: 3903048     Writes: 930
+Reads: 3931347     Writes: 929
+Reads: 3928971     Writes: 933
+Reads: 3916477     Writes: 919
+Reads: 3912843     Writes: 929
+Reads: 3890217     Writes: 924
+Reads: 3913823     Writes: 929
+THREADS: 6
+Size of one list element: 40
+Reads: 3934033     Writes: 927
+Reads: 3843166     Writes: 903
+Reads: 3942041     Writes: 931
+Reads: 3924752     Writes: 928
+Reads: 3922411     Writes: 922
+Reads: 3842095     Writes: 920
+Reads: 3931174     Writes: 926
+Reads: 3930408     Writes: 927
+Reads: 3932665     Writes: 929
+Reads: 3931380     Writes: 931
+THREADS: 7
+Size of one list element: 40
+Reads: 3931082     Writes: 929
+Reads: 3927875     Writes: 929
+Reads: 3920873     Writes: 930
+Reads: 3933535     Writes: 933
+Reads: 3930795     Writes: 931
+Reads: 3924323     Writes: 933
+Reads: 3916247     Writes: 929
+Reads: 3899912     Writes: 927
+Reads: 3928129     Writes: 931
+Reads: 3939301     Writes: 931
+THREADS: 8
+Size of one list element: 40
+Reads: 3180962     Writes: 929
+Reads: 3184941     Writes: 932
+Reads: 3194935     Writes: 932
+Reads: 3176598     Writes: 929
+Reads: 3185624     Writes: 928
+Reads: 3187299     Writes: 927
+Reads: 3156853     Writes: 924
+Reads: 3176721     Writes: 927
+Reads: 3151687     Writes: 927
+Reads: 3184349     Writes: 930
+THREADS: 9
+Size of one list element: 40
+Reads: 3173093     Writes: 930
+Reads: 3162896     Writes: 924
+Reads: 3182202     Writes: 929
+Reads: 3175938     Writes: 928
+Reads: 3175975     Writes: 921
+Reads: 3107981     Writes: 908
+Reads: 3180777     Writes: 927
+Reads: 3165958     Writes: 925
+Reads: 3181678     Writes: 929
+Reads: 3166938     Writes: 930
+THREADS: 10
+Size of one list element: 40
+Reads: 3167623     Writes: 926
+Reads: 3166778     Writes: 925
+Reads: 3164033     Writes: 926
+Reads: 3159430     Writes: 927
+Reads: 3168192     Writes: 929
+Reads: 3167066     Writes: 927
+Reads: 3171858     Writes: 925
+Reads: 3152641     Writes: 924
+Reads: 3149636     Writes: 924
+Reads: 3165092     Writes: 925
