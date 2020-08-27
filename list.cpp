@@ -15,9 +15,9 @@
 #  define wr_lock(lock) pthread_rwlock_wrlock(lock)
 #  define wr_unlock(lock) pthread_rwlock_unlock(lock)
 #elif defined (USE_RCU)
-#  define rd_lock(lock) // TODO
-#  define rd_unlock(lock) // TODO
-#  define wr_lock(lock) // TODO
+#  define rd_lock(lock) rcu_read_lock();
+#  define rd_unlock(lock) rcu_read_unlock();
+#  define wr_lock(lock) // TODO spin?
 #  define wr_unlock(lock) //TODO
 #else
 #  error "No lock type defined"
@@ -44,7 +44,7 @@ void esw_list_init(LIST_TYPE *list)
     PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP) ;
     CHECK(pthread_rwlock_init(&list->lock, &rwlock_attributes)==0);
 #elif defined (USE_RCU)
-//     TODO
+    CDS_INIT_LIST_HEAD(list);
 #else
 #error "No lock type defined"
 #endif
@@ -63,7 +63,7 @@ void esw_list_push(LIST_TYPE *list, const char *const key, const char *const val
     list->head = node;
     wr_unlock(&list->lock);
 #elif defined (USE_RCU)
-    // TODO
+    cds_list_add_rcu(&node->node, list);
 #endif
 }
 
@@ -88,7 +88,17 @@ void esw_list_update(LIST_TYPE *list, const char *const key, const char *const v
     }
     wr_unlock(&list->lock);
 #elif defined (USE_RCU)
-    // TODO
+    esw_node_t *node;
+    esw_node_t *n;
+    cds_list_for_each_entry_safe(node, n, list, node) {
+        if (strcmp(node->key, key) == 0) {
+            esw_node_t *new_node = esw_list_create_node(key, value);
+            cds_list_replace_rcu(&node->node, &new_node->node);
+//            urcu_memb_call_rcu(&node->node, free_node_rcu);
+            break;
+        }
+    }
+    // Smazat neco? Starej prvek?
 #endif
 }
 
@@ -118,7 +128,20 @@ bool esw_list_find(LIST_TYPE *list, const char *const key, char *value, const si
         current = current->next;
     }
 #elif defined (USE_RCU)
+//    rcu_read_lock();
+
     // TODO
+    esw_node_t *node,*n;
+    cds_list_for_each_entry_safe(node, n, list, node) {
+        if (strcmp(node->key, key) == 0) {
+            if (strcmp(node->value, value) == 0) {
+                found = true;
+                break;
+            }
+        }
+    }
+
+//    rcu_read_unlock();
 #endif
     rd_unlock(&list->lock);
 

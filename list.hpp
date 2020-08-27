@@ -25,7 +25,7 @@ typedef struct esw_node {
     struct esw_node * next;
     struct esw_node * prev;
 #elif defined (USE_RCU)
-    // TODO
+    struct cds_list_head node;	/* Linked-list chaining */
 #else
 #error "No lock type defined"
 #endif
