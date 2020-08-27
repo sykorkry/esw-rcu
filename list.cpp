@@ -10,10 +10,10 @@
 #  define wr_lock(lock) pthread_mutex_lock(lock)
 #  define wr_unlock(lock) pthread_mutex_unlock(lock)
 #elif defined (USE_RWLOCK)
-#  define rd_lock(lock) // TODO
-#  define rd_unlock(lock) // TODO
-#  define wr_lock(lock) // TODO
-#  define wr_unlock(lock) // TODO
+#  define rd_lock(lock) pthread_rwlock_rdlock(lock)
+#  define rd_unlock(lock) pthread_rwlock_unlock(lock)
+#  define wr_lock(lock) pthread_rwlock_wrlock(lock)
+#  define wr_unlock(lock) pthread_rwlock_unlock(lock)
 #elif defined (USE_RCU)
 #  define rd_lock(lock) // TODO
 #  define rd_unlock(lock) // TODO
@@ -37,9 +37,14 @@ void esw_list_init(LIST_TYPE *list)
     CHECK(pthread_mutex_init(&list->lock, NULL));
     list->head = NULL;
 #elif defined (USE_RWLOCK)
-    // TODO
+    // http://www.compsci.hunter.cuny.edu/~sweiss/course_materials/unix_lecture_notes/chapter_10.pdf
+    pthread_rwlockattr_t rwlock_attributes;
+    pthread_rwlockattr_init(&rwlock_attributes);
+    pthread_rwlockattr_setkind_np(&rwlock_attributes,
+    PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP) ;
+    CHECK(pthread_rwlock_init(&list->lock, &rwlock_attributes)==0);
 #elif defined (USE_RCU)
-    // TODO
+//     TODO
 #else
 #error "No lock type defined"
 #endif
