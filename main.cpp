@@ -21,7 +21,7 @@
 #define WRITE_PERIOD_US 1000
 #define ITEM_QUANTITY 100
 #define PREDEF_ADDR_QUANTITY 4
-#define TEST_DURATION 3
+#define TEST_DURATION 10
 
 using namespace std;
 
