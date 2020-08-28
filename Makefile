@@ -1,6 +1,6 @@
 CXXFLAGS = -static -O3 -g -Wall
 LDFLAGS = 
-LIBS = -lpthread -lrt
+LIBS = -lpthread -lrt -lurcu-qsbr
 #export PKG_CONFIG_PATH = /path/to/my/liburcu/lib/pkgconfig
 
 SRCS = main.cpp list.cpp
