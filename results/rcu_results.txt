@@ -1,0 +1,120 @@
+THREADS: 1
+Size of one list element: 56
+Reads: 2537262     Writes: 949       
+Reads: 2539013     Writes: 950       
+Reads: 2550714     Writes: 949       
+Reads: 2542013     Writes: 950       
+Reads: 2559457     Writes: 949       
+Reads: 2523506     Writes: 950       
+Reads: 2539670     Writes: 949       
+Reads: 2519859     Writes: 949       
+Reads: 2561533     Writes: 949       
+Reads: 2544312     Writes: 949       
+THREADS: 2
+Size of one list element: 56
+Reads: 4939492     Writes: 947       
+Reads: 4987880     Writes: 948       
+Reads: 5014191     Writes: 947       
+Reads: 4982877     Writes: 948       
+Reads: 5005906     Writes: 947       
+Reads: 4963469     Writes: 948       
+Reads: 4988845     Writes: 947       
+Reads: 4975140     Writes: 948       
+Reads: 5011377     Writes: 947       
+Reads: 4996447     Writes: 948       
+THREADS: 3
+Size of one list element: 56
+Reads: 7137627     Writes: 947       
+Reads: 7192260     Writes: 948       
+Reads: 7217537     Writes: 947       
+Reads: 7144057     Writes: 948       
+Reads: 7206737     Writes: 947       
+Reads: 7189827     Writes: 948       
+Reads: 7186872     Writes: 947       
+Reads: 7167234     Writes: 948       
+Reads: 7212713     Writes: 947       
+Reads: 7186745     Writes: 948       
+THREADS: 4
+Size of one list element: 56
+Reads: 9171789     Writes: 947       
+Reads: 9401014     Writes: 947       
+Reads: 9454834     Writes: 948       
+Reads: 9409290     Writes: 947       
+Reads: 9460103     Writes: 948       
+Reads: 9396345     Writes: 947       
+Reads: 9459174     Writes: 948       
+Reads: 9371511     Writes: 947       
+Reads: 9466796     Writes: 948       
+Reads: 9457728     Writes: 947       
+THREADS: 5
+Size of one list element: 56
+Reads: 11326325    Writes: 947       
+Reads: 11754795    Writes: 947       
+Reads: 11836761    Writes: 948       
+Reads: 11792219    Writes: 947       
+Reads: 11871346    Writes: 948       
+Reads: 11732798    Writes: 948       
+Reads: 11838776    Writes: 947       
+Reads: 11751787    Writes: 947       
+Reads: 11861829    Writes: 948       
+Reads: 11769936    Writes: 947       
+THREADS: 6
+Size of one list element: 56
+Reads: 13068521    Writes: 947       
+Reads: 13810490    Writes: 947       
+Reads: 13875506    Writes: 948       
+Reads: 13795681    Writes: 947       
+Reads: 13902785    Writes: 946       
+Reads: 13820381    Writes: 947       
+Reads: 13837076    Writes: 947       
+Reads: 13755612    Writes: 946       
+Reads: 13921243    Writes: 947       
+Reads: 13816892    Writes: 947       
+THREADS: 7
+Size of one list element: 56
+Reads: 14551808    Writes: 947       
+Reads: 15387211    Writes: 948       
+Reads: 15540591    Writes: 947       
+Reads: 15313041    Writes: 948       
+Reads: 15296647    Writes: 947       
+Reads: 14579835    Writes: 948       
+Reads: 14582429    Writes: 946       
+Reads: 13684719    Writes: 947       
+Reads: 14496418    Writes: 947       
+Reads: 14269108    Writes: 947       
+THREADS: 8
+Size of one list element: 56
+Reads: 15595177    Writes: 947       
+Reads: 16234300    Writes: 947       
+Reads: 16307507    Writes: 946       
+Reads: 16238926    Writes: 947       
+Reads: 16339272    Writes: 946       
+Reads: 16256254    Writes: 947       
+Reads: 17011873    Writes: 946       
+Reads: 16982049    Writes: 947       
+Reads: 17141551    Writes: 946       
+Reads: 17008884    Writes: 947       
+THREADS: 9
+Size of one list element: 56
+Reads: 17592247    Writes: 947       
+Reads: 19019391    Writes: 947       
+Reads: 19161834    Writes: 946       
+Reads: 19000343    Writes: 947       
+Reads: 19145386    Writes: 946       
+Reads: 18575867    Writes: 947       
+Reads: 18490043    Writes: 946       
+Reads: 18970912    Writes: 947       
+Reads: 19213248    Writes: 947       
+Reads: 19143446    Writes: 946       
+THREADS: 10
+Size of one list element: 56
+Reads: 18868933    Writes: 947       
+Reads: 20276280    Writes: 946       
+Reads: 20304980    Writes: 947       
+Reads: 20533141    Writes: 946       
+Reads: 20283747    Writes: 947       
+Reads: 20379905    Writes: 946       
+Reads: 20118658    Writes: 947       
+Reads: 20282632    Writes: 946       
+Reads: 20505584    Writes: 947       
+Reads: 20417982    Writes: 947       

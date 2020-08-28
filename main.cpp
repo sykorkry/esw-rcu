@@ -87,7 +87,7 @@ void *reader_thread(void *arg)
     long miss = 0;
 
     // TODO - Rcu should have someting here
-    rcu_register_thread();
+//    rcu_register_thread();
 
     while (1) {
         generate_random_key(key, MAX_KEY_LEN);
