@@ -91,6 +91,7 @@ void esw_list_update(LIST_TYPE *list, const char *const key, const char *const v
     esw_node_t *node;
     esw_node_t *n;
     cds_list_for_each_entry_safe(node, n, list, node) {
+        rcu_quiescent_state();
         if (strcmp(node->key, key) == 0) {
             esw_node_t *new_node = esw_list_create_node(key, value);
             cds_list_replace_rcu(&node->node, &new_node->node);
@@ -99,6 +100,7 @@ void esw_list_update(LIST_TYPE *list, const char *const key, const char *const v
         }
     }
     // Smazat neco? Starej prvek?
+    synchronize_rcu();
 #endif
 }
 
